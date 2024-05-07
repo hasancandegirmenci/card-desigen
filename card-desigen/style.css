@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sedan+SC&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Sedan SC", serif;
+}
+
+body {
+  display: flex;
+  background-color: #e99ac4;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px auto;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 2px solid #e1acac;
+  background-color: #ffd0d0;
+  border-radius: 0px 35px 0px 35px;
+  width: 250px;
+  height: 400px;
+  box-shadow: 0 0 10px #e1acac;
+}
+.card-container .card-logo {
+  padding: 7px;
+  width: 40px;
+  cursor: pointer;
+}
+.card-container .card-img {
+  display: flex;
+  padding: 0px;
+  width: 220px;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.card-container .card-img .profile-img img {
+  border-radius: 50%;
+}
+.card-container .card-img .profile-img img:hover {
+  box-shadow: 0 0 10px #fffefe;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card-container .card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 240px;
+}
+.card-container .card-title h1 {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.card-container .card-title h1 span {
+  color: rgba(194, 72, 15, 0.809);
+}
+.card-container .card-title h3 {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+  color: rebeccapurple;
+}
+
+.card-container .card-info p {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0;
+  margin-left: 7px;
+  margin-top: 10px;
+  color: rgba(182, 12, 74, 0.809);
+}
+.card-container .card-social {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  margin-top: 25px;
+}
+.card-container .card-social img {
+  transition: all 0.6s ease;
+  border: none;
+  border-radius: 50%;
+}
+
+.card-social img:hover {
+  /* transform: scale(1.1); */
+  transform: rotate3d(0, 0, 1, 360deg);
+  box-shadow: 0 0 10px rgba(224, 219, 219, 0.99);
+  border: none;
+}
